@@ -27,8 +27,8 @@ const HomePage = () => {
 
   const usersPerPage = 10;
   const pagesVisited = pageNumber * usersPerPage;
-  const displayNews = news.slice(pagesVisited, pagesVisited + usersPerPage);
-  const pageCount = Math.ceil(news.length / usersPerPage);
+  const displayNews = news?.slice(pagesVisited, pagesVisited + usersPerPage);
+  const pageCount = Math.ceil(news?.length / usersPerPage);
   const changePage = ({ selected }) => {
     setPageNumber(selected);
   };
