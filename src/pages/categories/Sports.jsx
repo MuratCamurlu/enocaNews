@@ -1,3 +1,4 @@
+import axios from "axios";
 import React, { useEffect, useState } from "react";
 import NewsCard from "../../components/newsCard/NewsCard";
 import Spinner from "../../components/spinner/Spinner";
@@ -6,18 +7,20 @@ const Sports = () => {
   const [news, setNews] = useState([]);
   const [loading, setLoading] = useState(false);
   const [filter, setFilter] = useState();
-  const API_KEY = "676f017549224f488970f1835f9db971";
+  const API_KEY = "2835d72f10a5493884ee1fe5216c379b";
   const url = `https://newsapi.org/v2/top-headlines?country=tr&category=sports&apiKey=${API_KEY}`;
 
   const filterUrl = `https://newsapi.org/v2/top-headlines?country=${filter}&category=business&apiKey=${API_KEY}`;
 
-  const getNews = (API) => {
+  const getNews = async (API) => {
     setLoading(true);
-    fetch(API)
-      .then((res) => res.json())
-      .then((data) => setNews(data.articles))
-      .catch((err) => console.log(err))
-      .finally(() => setLoading(false));
+    try {
+      const { data } = await axios(API);
+      setNews(data.articles);
+      setLoading(false);
+    } catch (error) {
+      console.log(error);
+    }
   };
 
   useEffect(() => {

@@ -13,9 +13,11 @@ const Business = () => {
   const filterUrl = `https://newsapi.org/v2/top-headlines?country=${filter}&category=business&apiKey=${API_KEY}`;
 
   const getNews = async (API) => {
+    setLoading(true);
     try {
       const { data } = await axios(API);
       setNews(data.articles);
+      setLoading(false);
     } catch (error) {
       console.log(error);
     }
