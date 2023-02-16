@@ -4,19 +4,22 @@ import style from "./HomePage.module.css";
 import NewsCard from "../../components/newsCard/NewsCard";
 import Slider from "../../components/slider/Slider";
 import Spinner from "../../components/spinner/Spinner";
+import axios from "axios";
 const HomePage = () => {
   const [news, setNews] = useState([]);
 
   const [pageNumber, setPageNumber] = useState(0);
 
-  // const API_KEY = "676f017549224f488970f1835f9db971";
-  const API_KEY = "242fb770517b456dac640c348e0fed1c";
+  const API_KEY = "2835d72f10a5493884ee1fe5216c379b";
+
   const url = `https://newsapi.org/v2/top-headlines?country=tr&apiKey=${API_KEY}`;
-  const getNews = () => {
-    fetch(url)
-      .then((res) => res.json())
-      .then((data) => setNews(data.articles))
-      .catch((err) => console.log(err));
+  const getNews = async () => {
+    try {
+      const { data } = await axios(url);
+      setNews(data.articles);
+    } catch (error) {
+      console.log(error);
+    }
   };
 
   useEffect(() => {
