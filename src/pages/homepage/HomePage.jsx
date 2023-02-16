@@ -21,8 +21,8 @@ const HomePage = () => {
 
   useEffect(() => {
     getNews();
-  }, []);
-
+  }, [url]);
+  console.log(news);
   const sliderNews = news.splice(0, 3);
 
   const usersPerPage = 10;
