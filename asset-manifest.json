@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/enocaNews/static/css/main.b5b17394.css",
+    "main.js": "/enocaNews/static/js/main.52c9ad9f.js",
+    "static/media/pro1.png": "/enocaNews/static/media/pro1.638025eb44549ebe4c2a.png",
+    "static/media/pro5.png": "/enocaNews/static/media/pro5.fc632a90ffc4b84ad233.png",
+    "static/media/pro3.png": "/enocaNews/static/media/pro3.034fd975774a5767ebca.png",
+    "static/media/pro4.png": "/enocaNews/static/media/pro4.a35503d7e45f3543f60f.png",
+    "static/media/btk6.png": "/enocaNews/static/media/btk6.c6ffce50379e747a1467.png",
+    "static/media/btk2.png": "/enocaNews/static/media/btk2.dcb4e8e0211d75a299df.png",
+    "static/media/btk5.png": "/enocaNews/static/media/btk5.f5a533eada85bbc43e72.png",
+    "static/media/btk3.png": "/enocaNews/static/media/btk3.7dbb2be9016a46f48c0d.png",
+    "static/media/btk4.png": "/enocaNews/static/media/btk4.977eeadf75dacf79a9ac.png",
+    "static/media/btk1.png": "/enocaNews/static/media/btk1.ddfa26430e45a713067e.png",
+    "static/media/cla3.png": "/enocaNews/static/media/cla3.2a1a667acca6a4c8d1ab.png",
+    "static/media/cla1.png": "/enocaNews/static/media/cla1.38234e517f1a40ee73b4.png",
+    "static/media/cla4.png": "/enocaNews/static/media/cla4.50d2c0955d324b3bb14f.png",
+    "static/media/cla2.png": "/enocaNews/static/media/cla2.73fee88fb20762527e8b.png",
+    "static/media/türkcell.png": "/enocaNews/static/media/türkcell.24a4dbe777d982c1e5f4.png",
+    "static/media/man.png": "/enocaNews/static/media/man.4a795892af1fb7b0bb1a.png",
+    "static/media/pro6.png": "/enocaNews/static/media/pro6.eaa1bd96f02d214dab2a.png",
+    "static/media/pro2.png": "/enocaNews/static/media/pro2.8f54c06712ee8b36663c.png",
+    "static/media/phone.png": "/enocaNews/static/media/phone.ee35c0fb7ebccc3d9bc3.png",
+    "static/media/moon.png": "/enocaNews/static/media/moon.562422ee757118f39404.png",
+    "static/media/adres.png": "/enocaNews/static/media/adres.86a20525abf0eb2c6c4c.png",
+    "static/media/award.png": "/enocaNews/static/media/award.238ad6387b1846b30867.png",
+    "static/media/email.png": "/enocaNews/static/media/email.3d893e2bb7cd57558d48.png",
+    "static/media/sun.png": "/enocaNews/static/media/sun.782c1365555c261ee8cb.png",
+    "static/media/random.png": "/enocaNews/static/media/random.95a5a7e9797ed4cb012b.png",
+    "index.html": "/enocaNews/index.html",
+    "main.b5b17394.css.map": "/enocaNews/static/css/main.b5b17394.css.map",
+    "main.52c9ad9f.js.map": "/enocaNews/static/js/main.52c9ad9f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b5b17394.css",
+    "static/js/main.52c9ad9f.js"
+  ]
+}
