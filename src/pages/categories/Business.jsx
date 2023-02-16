@@ -12,7 +12,7 @@ const Business = () => {
   const filterUrl = `https://newsapi.org/v2/top-headlines?country=${filter}&category=business&apiKey=${API_KEY}`;
 
   const getNews = (API) => {
-    setLoading();
+    setLoading(true);
     fetch(API)
       .then((res) => res.json())
       .then((data) => setNews(data.articles))

@@ -12,7 +12,7 @@ const Science = () => {
   const filterUrl = `https://newsapi.org/v2/top-headlines?country=${filter}&category=business&apiKey=${API_KEY}`;
 
   const getNews = (API) => {
-    setLoading();
+    setLoading(true);
     fetch(API)
       .then((res) => res.json())
       .then((data) => setNews(data.articles))
@@ -30,7 +30,7 @@ const Science = () => {
     setFilter("");
   };
 
-  // console.log(news);
+  console.log(news);
   return (
     <div className={style.container}>
       <div className={style.left}>
