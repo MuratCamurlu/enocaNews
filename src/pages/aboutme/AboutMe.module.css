@@ -1,0 +1,9 @@
+.about {
+  width: 100%;
+  background-color: #f8f9fa;
+}
+@media screen and (max-width: 1200px) {
+  .about {
+    width: 1200px;
+  }
+}

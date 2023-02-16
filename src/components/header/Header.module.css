@@ -1,0 +1,38 @@
+.container {
+  background-color: rgb(17, 16, 16);
+  width: 100%;
+  color: bisque;
+  display: flex;
+  flex-direction: column;
+  padding-top: 1rem;
+}
+form {
+  width: 40%;
+}
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.search {
+  width: 70%;
+  height: 2rem;
+}
+.button {
+  width: 20%;
+  height: 2.4rem;
+  margin-left: 5px;
+  background-color: orange;
+  border-radius: 10px;
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
+}
+.button:active {
+  transform: scale(0.95);
+}
+@media screen and (max-width: 1000px) {
+  .container {
+    width: 1000px;
+  }
+}

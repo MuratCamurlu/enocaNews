@@ -1,0 +1,38 @@
+.p {
+  width: 40rem;
+  height: 30vh;
+  margin: 20px 10px;
+  border: 2px solid rgb(243, 242, 242);
+  border-radius: 10px 10px 0px 0px;
+  overflow: hidden;
+}
+.browser {
+  height: 20px;
+  background-color: rgb(243, 242, 242);
+  display: flex;
+  align-items: center;
+  position: sticky;
+  z-index: 2;
+}
+.circle {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: white;
+  margin: 3px;
+}
+.img {
+  width: 100%;
+  height: 100%;
+  transition: all 1s ease;
+  object-fit: cover;
+  text-align: center;
+}
+.p:hover .img {
+  transform: translateY(-10%);
+}
+.p a {
+  border: 1px solid black;
+  width: 100%;
+  height: 100%;
+}
