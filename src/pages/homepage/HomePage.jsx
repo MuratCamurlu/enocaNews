@@ -7,16 +7,18 @@ import Spinner from "../../components/spinner/Spinner";
 import axios from "axios";
 const HomePage = () => {
   const [news, setNews] = useState([]);
-
+  const [loading, setLoading] = useState(false);
   const [pageNumber, setPageNumber] = useState(0);
 
   const API_KEY = "2835d72f10a5493884ee1fe5216c379b";
 
   const url = `https://newsapi.org/v2/top-headlines?country=tr&apiKey=${API_KEY}`;
   const getNews = async () => {
+    setLoading(true);
     try {
       const { data } = await axios(url);
       setNews(data.articles);
+      setLoading(false);
     } catch (error) {
       console.log(error);
     }
@@ -41,6 +43,7 @@ const HomePage = () => {
         <Slider sliderNews={sliderNews} />
       </div>
       <div className={style.news}>
+        {loading && <Spinner />}
         {displayNews?.map((item, index) => (
           <NewsCard key={index} {...item} />
         ))}
