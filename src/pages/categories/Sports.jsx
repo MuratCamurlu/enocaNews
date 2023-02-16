@@ -6,7 +6,7 @@ const Sports = () => {
   const [news, setNews] = useState([]);
   const [loading, setLoading] = useState(false);
   const [filter, setFilter] = useState();
-  const API_KEY = "242fb770517b456dac640c348e0fed1c";
+  const API_KEY = "676f017549224f488970f1835f9db971";
   const url = `https://newsapi.org/v2/top-headlines?country=tr&category=sports&apiKey=${API_KEY}`;
 
   const filterUrl = `https://newsapi.org/v2/top-headlines?country=${filter}&category=business&apiKey=${API_KEY}`;

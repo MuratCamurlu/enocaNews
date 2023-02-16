@@ -9,8 +9,8 @@ const HomePage = () => {
 
   const [pageNumber, setPageNumber] = useState(0);
 
-  // const API_KEY = "676f017549224f488970f1835f9db971";
-  const API_KEY = "242fb770517b456dac640c348e0fed1c";
+  const API_KEY = "676f017549224f488970f1835f9db971";
+  // const API_KEY = "242fb770517b456dac640c348e0fed1c";
   const url = `https://newsapi.org/v2/top-headlines?country=tr&apiKey=${API_KEY}`;
   const getNews = () => {
     fetch(url)
